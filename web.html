@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h2>RMC</h2></div>
+        <img src="rmc.png" width="139" height="112" />
+        <div class="menu">
+          <a href="">HOME</a>
+          <a
+            href="http://imdnagpur.gov.in/Welcome%20To%20RMC%20Nagpur/Welcome.php"
+            >ABOUT</a
+          >
+          <a href="">CONTACT</a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="droparea">Drop the file here</div>
+        <script>
+          const droparea = document.querySelector(".droparea");
+          droparea.addEventListener("dragover", () => {
+            droparea.classList.add("hover");
+          });
+          droparea.addEventListener("dragleave", () => {
+            droparea.classList.remove("hover");
+          });
+        </script>
+
+        <section>
+          <h3>Regional Meteorological Centre,Nagpur</h3>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>
